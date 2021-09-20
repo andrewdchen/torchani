@@ -68,6 +68,7 @@ _, atomic_energies = model.atomic_energies((species, coordinates))
 # with the same shape as the coordinates. Dummy atoms, if present, will have an
 # energy of zero
 print('Average Atomic energies, for species 6 1 1 1 1', atomic_energies)
+print('Sum of atomic energies', torch.sum(atomic_energies))
 
 ###############################################################################
 # you can also access model specific atomic energies
